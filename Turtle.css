@@ -88,11 +88,11 @@ nav .fa {
     
 
 }
-.navlinks ul li::after{
+.navlinks ul li:hover::after{
     content:'';
     height:3px;
     width:0;
-    background: #009688;;
+    background: #2007fd;;
     position: absolute;
     left:0;
     bottom:-10px;
@@ -129,7 +129,7 @@ nav .fa {
     display: inline-block;
     color: black;
     font-size: 24px;
-    border: 1px solid #fff;
+    border: 1px solid #e70707;
     padding: 11px 60px;
     border-radius: 50px;
     margin-top: 80px;
@@ -151,7 +151,7 @@ nav .fa {
     margin: auto;
     text-align: center;
     padding-top: 50px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 40px;
     
 }
@@ -705,246 +705,4 @@ h2 {
   
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    filter: brightness(100%);
-}
-
-/* Heading */
-.heading {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(241, 241, 241, 0.7), rgba(211, 104, 104, 0.7));
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
-.navlinks ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navlinks ul li {
-    margin: 0 10px;
-    position: relative;
-}
-
-.navlinks ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.navlinks ul li:hover::after {
-    width: 100%;
-}
-
-.navlinks ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: cursive;
-}
-
-.dropdown-list {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-li.current-page:hover .dropdown-list {
-    display: block;
-    opacity: 1;
-}
-
-.dropdown-list li {
-    list-style: none;
-    padding: 8px 16px;
-}
-
-.dropdown-list li a {
-    display: block;
-    color: #fffafa;
-    text-decoration: none;
-}
-
-.dropdown-list li a:hover {
-    background-color: #f24141;
-}
-
-.content {
-    text-align: center;
-}
-
-.content h1 {
-    font-style: italic;
-    font-family: cursive;
-    font-size: 4vw;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 2rem;
-}
-
-/* Text Section */
-.text {
-    width: 100%;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-}
-
-.text h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-style: italic;
-    font-family: cursive;
-    margin-bottom: 1rem;
-}
-
-.text p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    font-style: italic;
-    font-family: cursive;
-}
-
-.textmain {
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-style: italic;
-    font-family: cursive;
-}
-
-.textmain .row {
-    flex: 0 0 48%;
-    margin-bottom: 2rem;
-}
-
-.textmain h2 {
-    font-family: cursive;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-/* Image Section */
-.parent {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 5%;
-    font-style: italic;
-    font-family: cursive;
-}
-
-.image-container {
-    flex: 0 0 31%;
-    margin-bottom: 2rem;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-
-.image-container p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.8rem;
-    font-style: italic;
-    font-family: cursive;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .navlinks ul li {
-        margin: 0 5px;
-    }
-
-    .content h1 {
-        font-size: 6vw;
-    }
-
-    .textmain .row {
-        flex: 0 0 100%;
-    }
-
-    .image-container {
-        flex: 0 0 100%;
-    }
-    .navlinks {
-      flex-direction: column;
-  }
-
-  .navlinks ul li {
-      margin: 10px 0;
-  }
-
-  .navlinks ul li::after {
-      display: none;
-  }
-
-  .dropdown-list {
-      position: static;
-      opacity: 1;
-      background-color: transparent;
-      margin-top: 10px;
-  }
-
-  .dropdown-list li {
-      padding: 8px 0;
-  }
-
-}
-
-
-
-
-  
-
-
-   
+ 
