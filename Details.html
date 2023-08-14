@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Details Page</title>
+    <link rel="stylesheet" href="Details.css">
+    <script src="Details.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css/css/flag-icon.min.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>TICKETS</h1>
+        <p>Get Your Tickets now</p>
+    </header>
+    
+    <div class="Tickets-continue-pg">
+        <div class="rectangle-parent">
+            <section id="details">
+                <h2>ENTER YOUR DETAILS</h2>
+                <form action="checkout.html" method="post">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required />
+                    <p class="error" id="fullName-error"></p>
+                    
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <select id="countryCode" name="countryCode">
+                        <option value="">Select Country</option>
+                        <option value="+91">India</option>
+                        <option value="+94">Sri Lanka</option>
+                        <option value="+1">United States</option>
+                        <option value="+65">Singapore</option>
+                        <option value="+86">China</option>
+                        <option value="+44">United Kingdom</option>
+                    </select>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" required />
+                    <p class="error" id="mobileNumber-error"></p>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    <p class="error" id="email-error"></p>
+                    
+                    <label for="confirmEmail">Confirm Email:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="you@example.com" required />
+                    <p class="error" id="confirmEmail-error"></p>
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <p class="error" id="gender-error"></p>
+                    
+                    <button type="submit">Continue with purchase</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <section id="summary" class="summary-section">
+        <h2>Summary</h2>
+        <table id="summaryTable" class="summary-table">
+          <tr>
+            <td>Date:</td>
+            <td id="summaryDate"></td>
+          </tr>
+          <tr>
+            <td>Time:</td>
+            <td id="summaryTime"></td>
+          </tr>
+          <tr>
+            <td>Duration:</td>
+            <td id="summaryDuration"></td>
+          </tr>
+          <tr>
+            <td>Tickets:</td>
+            <td id="summaryTickets"></td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td id="summaryTotal"></td>
+          </tr>
+        </table>
+      </section>
+
+      
+    
+    <footer>
+        <p>© 2023 Aqua Falls. All Rights Reserved.</p> 
+    </footer>
+</body>
+</html>

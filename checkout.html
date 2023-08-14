@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="checkout.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Secure Payment</h1>
+        </header>
+        <section id="details">
+            <h2>Enter Your Payment Details</h2>
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName" name="cardName" placeholder="Jake" />
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****" maxlength="16" />
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" />
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="3" />
+            
+            <button id="proceedToPayment"><i class="fas fa-lock"></i> Confirm Payment</button>
+        </section>
+        
+       
+    </div>
+
+
+
+
+        <footer>
+            <p>&copy; 2023 Aqua Falls. All Rights Reserved.</p>
+        </footer>
+    
+</body>
+</html>

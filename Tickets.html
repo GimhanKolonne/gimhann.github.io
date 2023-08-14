@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="Tickets.css" />
+</head>
+<body>
+  <div class="tickets-pg">
+    <nav class="nav-container" id="nav">
+      <h2 class="title">Aqua Falls</h2>
+      <a class="link" href="index.html" id="home">Home</a>
+      <a class="link" href="Turtle2.html" id="categories">Categories</a>
+      <a class="link" href="Turtle3.html" id="hatchery">Hatchery</a>
+      <a class="link" href="Turtle4.html" id="threats">Threats</a>
+      <a class="link" href="Turtle5.html" id="otherHatcheries">Other Hatcheries</a>
+      <a class="link" href="Turtle7.html" id="purchaseDonation">Purchase & Donation</a>
+    </nav>
+    <div class="purchase-parent">
+      <h4 class="purchase-title" id="Purchase">PURCHASE YOUR</h4>
+      <h1 class="ticket-title" id="Tickets">TICKETS</h1>
+    </div>
+    <button class="continue-btn" autofocus>
+      <div class="continue">Continue</div>
+    </button>
+  </div>
+  <script>
+    var continueBtn = document.querySelector(".continue-btn");
+    continueBtn.addEventListener("click", function (e) {
+      window.location.href = "Tickets-cont.html";
+    });
+
+  
+    
+  </script>
+</body>
+</html>
